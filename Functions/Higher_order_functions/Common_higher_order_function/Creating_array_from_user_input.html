@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+let n = prompt("enter a number: ");
+let arr = [];
+for(let i=0;i<n;i++){
+    arr[i] = Number(prompt(`Enter array element for index ${i}: `));
+}
+let sum = arr.reduce((res,val)=>{
+    return res+val;
+},0);
+console.log(sum);
+let product = arr.reduce((res,val)=>{
+    return res*val;
+},1);
+console.log(product);
+</script>
